@@ -3,7 +3,7 @@
 
         <article>
             <header>
-                <h1>Home Page</h1>
+                <h1>About Us</h1>
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam sodales urna non odio egestas tempor. Nunc vel vehicula ante. Etiam bibendum iaculis libero, eget molestie nisl pharetra in. In semper consequat est, eu porta velit mollis nec.</p>
             </header>
             <section>
@@ -27,3 +27,4 @@
 
     </div> <!-- #main -->
 </div> <!-- #main-container -->
+
