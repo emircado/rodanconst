@@ -16,8 +16,11 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 
         <link rel="stylesheet" href="<?php echo base_url('css/normalize.min.css') ?>">
         <link rel="stylesheet" href="<?php echo base_url('css/main.css') ?>">
+        <link href="https://fonts.googleapis.com/css?family=PT+Sans" rel="stylesheet"> 
 
         <link type="text/plain" rel="author" href="http://www.rodanconstruction.com/humans.txt" />
+
+        <link rel="icon" type="image/ico" href="<?php echo base_url('favicon.ico') ?>">
 
         <script src="<?php echo base_url('js/vendor/modernizr-2.8.3-respond-1.4.2.min.js') ?>"></script>
     </head>
@@ -28,13 +31,13 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 
         <div class="header-container">
             <header class="wrapper clearfix">
-                <h1 class="title">Rodan Construction</h1>
+                <h1 class="title"><a href="<?php echo site_url('') ?>">Rodan Construction</a></h1>
                 <nav>
                     <ul>
-                        <li><a href="<?php echo site_url('') ?>">Home</a></li>
-                        <li><a href="<?php echo site_url('aboutus') ?>">About Us</a></li>
-                        <li><a href="<?php echo site_url('gallery') ?>">Gallery</a></li>
-                        <li><a href="<?php echo site_url('contactus') ?>">Contact Us</a></li>
+                        <li><a href="<?php echo site_url('') ?>">HOME</a></li>
+                        <li><a href="<?php echo site_url('aboutus') ?>">ABOUT</a></li>
+                        <li><a href="<?php echo site_url('gallery') ?>">GALLERY</a></li>
+                        <li><a href="<?php echo site_url('contactus') ?>">CONTACT</a></li>
                     </ul>
                 </nav>
             </header>
