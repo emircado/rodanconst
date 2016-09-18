@@ -1,5 +1,5 @@
 <div class="main-container">
-    <div class="banner">
+    <div id="banner-about" class="banner">
         <div class="wrapper">
             <h1 class="banner-name">
                 ABOUT US

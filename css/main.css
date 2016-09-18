@@ -187,9 +187,10 @@ body {
     height : 65px;
     margin : 0;
     padding : 0;
+    margin-bottom : 10px;
+    
     background : url(../img/logo.png) no-repeat 0 0;
     background-size: contain;
-    margin-bottom : 10px;
 }
 
 .title a {
@@ -211,8 +212,49 @@ nav a {
     background: #2E7060;
 }
 
-#home-banner {
+#banner-home {
     height: 600px;
+    background:
+        linear-gradient(
+            rgba(46, 112, 96, 0.6),
+            rgba(46, 112, 96, 0.6)
+        ), 
+        url(../img/banner-home.jpg) no-repeat 0 0;
+    background-position: center;
+    background-size: cover;
+}
+
+#banner-about {
+    background : 
+        linear-gradient(
+            rgba(46, 112, 96, 0.65),
+            rgba(46, 112, 96, 0.65)
+        ), 
+        url(../img/banner-about.jpg) no-repeat 0 0;
+    background-position: center;
+    background-size: cover;
+}
+
+#banner-gallery {
+    background : 
+        linear-gradient(
+            rgba(46, 112, 96, 0.65),
+            rgba(46, 112, 96, 0.65)
+        ), 
+        url(../img/banner-gallery.jpg) no-repeat 0 0;
+    background-position: center;
+    background-size: cover;
+}
+
+#banner-contact{
+    background : 
+        linear-gradient(
+            rgba(46, 112, 96, 0.65),
+            rgba(46, 112, 96, 0.65)
+        ), 
+        url(../img/banner-contact.jpg) no-repeat 0 0;
+    background-position: center;
+    background-size: cover;
 }
 
 .banner .wrapper {
@@ -244,6 +286,7 @@ nav a {
 
     nav a:hover {
         border-bottom: 10px solid #2E7060;
+        font-weight: bold;
     }
 
     nav a {
@@ -255,6 +298,9 @@ nav a {
         height: 25px;
         background: transparent;
         color: #363636;
+
+        border-bottom: 10px solid transparent;
+        transition: border-bottom 0.1s linear;
     }
 
     nav a:hover,

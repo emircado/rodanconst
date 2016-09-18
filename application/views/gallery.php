@@ -1,5 +1,5 @@
 <div class="main-container">
-    <div class="banner">
+    <div id="banner-gallery" class="banner">
         <div class="wrapper">
             <h1 class="banner-name">
                 GALLERY
