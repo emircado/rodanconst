@@ -1,4 +1,11 @@
 <div class="main-container">
+    <div id="home-banner" class="banner">
+        <div class="wrapper">
+            <h1 class="banner-name">
+                RODAN CONSTRUCTION
+            </h1>
+        </div>
+    </div>
     <div class="main wrapper clearfix">
 
         <article>

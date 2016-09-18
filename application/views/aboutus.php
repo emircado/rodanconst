@@ -1,4 +1,11 @@
 <div class="main-container">
+    <div class="banner">
+        <div class="wrapper">
+            <h1 class="banner-name">
+                ABOUT US
+            </h1>
+        </div>
+    </div>
     <div class="main wrapper clearfix">
 
         <article>

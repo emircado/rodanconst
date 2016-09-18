@@ -16,7 +16,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 
         <link rel="stylesheet" href="<?php echo base_url('css/normalize.min.css') ?>">
         <link rel="stylesheet" href="<?php echo base_url('css/main.css') ?>">
-        <link href="https://fonts.googleapis.com/css?family=PT+Sans" rel="stylesheet"> 
+        <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700" rel="stylesheet"> 
 
         <link type="text/plain" rel="author" href="http://www.rodanconstruction.com/humans.txt" />
 
