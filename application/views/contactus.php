@@ -16,19 +16,19 @@
                         <label for="contact-name">
                             Name <abbr title="required" required>*</abbr>
                         </label><br>
-                        <input type="text" name="contact-name" id="contact-name" placeholder="Full Name"><br>
+                        <input type="text" name="contact-name" id="contact-name"><br>
                     </div>
                     <div class="form-field">
                         <label for="contact-email">
                             Email <abbr title="required" required>*</abbr>
                         </label><br>
-                        <input type="email" name="contact-email" id="contact-email" placeholder="example@email.com"><br>
+                        <input type="email" name="contact-email" id="contact-email"><br>
                     </div>
                     <div class="form-field">
                         <label for="contact-phone">
                             Phone <abbr title="required" required>*</abbr>
                         </label><br>
-                        <input type="tel" name="contact-phone" id="contact-phone" placeholder="(xxx) xxx-xxxx"><br>
+                        <input type="tel" name="contact-phone" id="contact-phone"><br>
                     </div>
                     <div class="form-field">
                         <label for="contact-message">
@@ -44,7 +44,7 @@
             <div id="contact-details-box">
                 <div title="Address">
                     <i class="fa fa-map-marker fa-lg" aria-hidden="true"></i>
-                    <p>2666 Royal Ann Dr.,<br>Union City, CA 94587</p>
+                    <p>2666 Royal Ann Dr,<br>Union City, CA 94587</p>
                 </div>
                 <div title="Phone Number">
                     <i class="fa fa-phone fa-lg" aria-hidden="true"></i>
