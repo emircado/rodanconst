@@ -9,12 +9,8 @@
     <div class="main wrapper clearfix">
 
         <article>
-            <header>
-                <h1>About Us</h1>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam sodales urna non odio egestas tempor. Nunc vel vehicula ante. Etiam bibendum iaculis libero, eget molestie nisl pharetra in. In semper consequat est, eu porta velit mollis nec.</p>
-            </header>
             <section>
-                <h2>About the Company</h2>
+                <h2>Rodan Construction</h2>
                 <p>Since 1997, Rodan Construction has offered its services as a general contractor in the Bay Area. We provide a variety of services for residential needs, such as renovations, repairs, and general home improvements. Every project or undertaking is performed with professionalism from planning to completion. Rodan Construction complies with safety and design standards in any of its works, ensuring quality to its customers.</p>
             </section>
             <section>

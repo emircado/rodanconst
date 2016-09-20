@@ -1,6 +1,7 @@
 <?php
 defined('BASEPATH') OR exit('No direct script access allowed');
-?><!DOCTYPE html>
+?>
+<!DOCTYPE html>
 <html lang="en">
 <!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang=""> <![endif]-->
 <!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8" lang=""> <![endif]-->
@@ -23,6 +24,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
         <link rel="icon" type="image/ico" href="<?php echo base_url('favicon.ico') ?>">
 
         <script src="<?php echo base_url('js/vendor/modernizr-2.8.3-respond-1.4.2.min.js') ?>"></script>
+        <script src="https://use.fontawesome.com/2b71088380.js"></script>
     </head>
     <body>
         <!--[if lt IE 8]>

@@ -1,6 +1,6 @@
         <div class="footer-container">
             <footer class="wrapper">
-                <p>Copyright &copy; 2016 Rodan Construction | LIC# B731254 </p>
+                <p>&copy; Copyright 2016 - Rodan Construction | LIC# B731254 </p>
             </footer>
         </div>
 

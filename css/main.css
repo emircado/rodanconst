@@ -34,11 +34,11 @@ video {
     vertical-align: middle;
 }
 
-fieldset {
+/*fieldset {
     border: 0;
     margin: 0;
     padding: 0;
-}
+}*/
 
 textarea {
     resize: vertical;
@@ -55,7 +55,7 @@ textarea {
 /* ===== Initializr Styles ==================================================
    Author: Jonathan Verrecchia - verekia.com/initializr/responsive-template
    ========================================================================== */
-
+/*OVERRIDE*/
 body {
     font: 16px/26px Helvetica, Helvetica Neue, Arial;
 }
@@ -124,7 +124,7 @@ nav a:visited {
    ============== */
 
 .main {
-    padding: 30px 0;
+    padding: 60px 0 30px 0;
 }
 
 .main article h1 {
@@ -167,7 +167,6 @@ body {
     background: #FFFFFF;
 }
 
-
 /*for footer*/
 .footer-container {
     background: #F1EFE6;
@@ -177,6 +176,7 @@ body {
 .footer-container p {
     margin: 10px 0;
     color: #363636;
+    font-size: .9em;
 }
 
 /* for logo at header*/
@@ -264,7 +264,7 @@ nav a {
 }
 
 .banner-name {
-    font-weight: bolder;
+    font-weight: bold;
     font-size: 3.5em;
 
     position: absolute;
@@ -273,6 +273,86 @@ nav a {
     margin: 0;
 }
 
+/* ========================
+    CONTACT US Page
+   ======================== */
+
+fieldset {
+    padding: 10px 15px;
+}
+
+legend {
+    padding: 0 5px;
+}
+
+.contact-panel h2 {
+    font-weight: normal;
+    margin: 0;
+}
+
+#contact-details {
+    margin-top: 30px; /*for mobile*/
+}
+
+#contact-details h2 {
+    margin-left: 15px;
+}
+
+.form-field {
+    margin-bottom: 10px;
+    width: 100%;
+}
+
+.form-field label {
+    font-size: 0.9em;
+}
+
+.form-field input:not([type=submit]):not([type=file]), 
+.form-field textarea {
+    border: 1px solid #E1E1E1;
+    background: #F5F5F5;
+    padding: 5px 10px;
+    box-sizing: border-box;
+    width: 100%;
+
+    /*for rounded edges*/
+    -moz-border-radius: 3px;
+    -webkit-border-radius: 3px;
+    border-radius: 3px;
+}
+
+.form-field abbr {
+    color: #2E7060;
+    font-size: 1.1em;
+    font-weight: bold;
+}
+
+#contact-map {
+    height: 300px; /*for mobile*/
+    width: 100%;
+    border: 0;
+    margin: 10px 0px 50px 0px;
+}
+
+#contact-details-box div {
+    margin: 15px 0px 10px 10px;
+}
+
+#contact-details-box i,
+#contact-details-box p {
+    display: inline-block;
+    vertical-align: middle;
+    margin: 0;
+    margin-left: 15px;
+}
+
+#contact-details-box p {
+    font-size: 0.9em;
+}
+
+#contact-details-box i {
+    color: #2E7060;
+}
 
 /* ==========================================================================
    Media Queries
@@ -322,11 +402,13 @@ nav a {
         top: 0; 
         width: 100%;
         height: 75px;
+        z-index: 10000;
     }
 
     /*margin for sticky header*/
     .main-container {
         margin-top: 85px;
+        min-height: 800px;
     }
 
     .title {
@@ -348,6 +430,31 @@ nav a {
 
     .oldie nav a {
         margin: 0 0.7%;
+    }
+
+/* ========================
+    CONTACT US Page
+   ======================== */
+
+    .contact-panel{
+        width: 48%;
+        margin: 0 1%;
+        display:inline-block;
+        vertical-align: top;
+    }
+
+    #contact-details {
+        margin-top: 0;
+    }
+
+    #contact-map,
+    #contact-details-box {
+        margin-left: 15px;
+    }
+
+    /*map adjusts height*/
+    #contact-map {
+        height: 500px;
     }
 }
 
