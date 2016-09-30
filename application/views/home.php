@@ -1,9 +1,11 @@
 <div class="main-container">
     <div id="banner-home" class="banner">
         <div class="wrapper">
-            <h1 class="banner-name">
-                Rodan Construction
-            </h1>
+            <div class="banner-name">
+                <h1>Rodan Construction</h1>
+                <h3>A General Contractor Company</h3>
+                <button type="button">Get Started</button>
+            </div>
         </div>
     </div>
     <div class="main clearfix">
@@ -31,9 +33,7 @@
         <div id="home-what" class="home-section">
             <div class="wrapper">
                 <article>
-                    <!-- <h1>RODAN CONSTRUCTION<br>IS A CALIFORNIA-LICENSED<br>GENERAL CONTRACTOR<br>IN THE BAY AREA</h1> -->
                     <h1>Rodan Construction is a California-Licensed General Contractor in the Bay Area</h1>
-
                     <a href="<?php echo site_url('gallery') ?>">View our featured projects</a>
                 </article>
                 <aside>
