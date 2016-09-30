@@ -250,11 +250,11 @@ nav a {
 }
 
 #banner-home {
-    height: 300px; /*for mobile*/
+    height: 325px; /*for mobile*/
     background:
         linear-gradient(
-            rgba(46, 112, 96, 0.65),
-            rgba(46, 112, 96, 0.65)
+            rgba(46, 112, 96, 0.7),
+            rgba(46, 112, 96, 0.7)
         ), 
         url(../img/banner-home.jpg) no-repeat 0 0;
     background-position: center;
@@ -264,8 +264,8 @@ nav a {
 #banner-about {
     background : 
         linear-gradient(
-            rgba(46, 112, 96, 0.65),
-            rgba(46, 112, 96, 0.65)
+            rgba(46, 112, 96, 0.7),
+            rgba(46, 112, 96, 0.7)
         ), 
         url(../img/banner-about.jpg) no-repeat 0 0;
     background-position: center;
@@ -275,8 +275,8 @@ nav a {
 #banner-gallery {
     background : 
         linear-gradient(
-            rgba(46, 112, 96, 0.65),
-            rgba(46, 112, 96, 0.65)
+            rgba(46, 112, 96, 0.7),
+            rgba(46, 112, 96, 0.7)
         ), 
         url(../img/banner-gallery.jpg) no-repeat 0 0;
     background-position: center;
@@ -286,8 +286,8 @@ nav a {
 #banner-contact {
     background : 
         linear-gradient(
-            rgba(46, 112, 96, 0.65),
-            rgba(46, 112, 96, 0.65)
+            rgba(46, 112, 96, 0.7),
+            rgba(46, 112, 96, 0.7)
         ), 
         url(../img/banner-contact.jpg) no-repeat 0 0;
     background-position: center;
@@ -300,6 +300,7 @@ nav a {
     bottom: 15%; /*for mobile*/
     width: 100%;
     text-align: center;
+    color: #F5F5F5;
 
     font-size: 1.5em; /*for mobile*/
     line-height: 1.5em; /*for mobile*/
@@ -656,6 +657,11 @@ legend {
     nav {
         float: right;
         width: 50%;
+    }
+
+    .nav-chosen {
+        border-bottom: 10px solid #2E7060;
+        font-weight: bold;    
     }
 
 /* ========================

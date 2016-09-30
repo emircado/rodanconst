@@ -36,10 +36,10 @@ defined('BASEPATH') OR exit('No direct script access allowed');
                 <h1 class="title"><a href="<?php echo site_url('') ?>">Rodan Construction</a></h1>
                 <nav>
                     <ul>
-                        <li><a href="<?php echo site_url('') ?>">HOME</a></li>
-                        <li><a href="<?php echo site_url('aboutus') ?>">ABOUT</a></li>
-                        <li><a href="<?php echo site_url('gallery') ?>">GALLERY</a></li>
-                        <li><a href="<?php echo site_url('contactus') ?>">CONTACT</a></li>
+                        <li><a <?php if ($page == "home") {echo 'class="nav-chosen"';} ?> href="<?php echo site_url('') ?>">HOME</a></li>
+                        <li><a <?php if ($page == "aboutus") {echo 'class="nav-chosen"';} ?> href="<?php echo site_url('aboutus') ?>">ABOUT</a></li>
+                        <li><a <?php if ($page == "gallery") {echo 'class="nav-chosen"';} ?> href="<?php echo site_url('gallery') ?>">GALLERY</a></li>
+                        <li><a <?php if ($page == "contactus") {echo 'class="nav-chosen"';} ?> href="<?php echo site_url('contactus') ?>">CONTACT</a></li>
                     </ul>
                 </nav>
             </header>

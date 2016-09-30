@@ -9,7 +9,7 @@
     <div class="main wrapper clearfix">
 
         <div id="contact-form" class="contact-panel">
-            <form>
+            <form name="contact-us-form" method="POST" accept-charset="utf-8" action="<?php echo site_url('contactus') ?>">
                 <fieldset>
                     <legend><h2>Send a Message</h2></legend>
                     <div class="form-field">

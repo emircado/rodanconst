@@ -11,7 +11,9 @@ class AboutUs extends CI_Controller {
 
     public function index()
     {
-        $this->load->view('header');
+        $data["page"] = "aboutus";
+
+        $this->load->view('header', $data);
         $this->load->view('aboutus');
         $this->load->view('footer');
     }
