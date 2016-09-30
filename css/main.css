@@ -74,13 +74,13 @@ body {
     border-bottom: 20px solid #e44d26;
 }
 
-/*OVERRIDE except aside*/
+/*OVERRIDE*/
 .footer-container,
 .main aside {
     border-top: 20px solid #e44d26;
 }
 
-/*OVERRIDE except aside*/
+/*OVERRIDE*/
 .header-container,
 .footer-container,
 .main aside {
@@ -124,7 +124,7 @@ nav a:visited {
    ============== */
 
 .main {
-    padding: 60px 0 30px 0;
+    padding: 40px 0 30px 0;
 }
 
 .main article h1 {
@@ -170,7 +170,7 @@ body {
 /*for footer*/
 .footer-container {
     background: #F1EFE6;
-    border-top: 2px solid #CEC1B1;
+    border-top: 2px solid #E5E3dA;
 }
 
 .footer-container p {
@@ -204,6 +204,21 @@ nav a {
     background: #2E7060;
     font-weight: normal;
 }
+
+.main aside {
+    border-top: 20px solid #2E7060;
+    background: #368571;
+}
+
+.main aside p {
+    font-size: .95em;
+    line-height: 1.6em;
+}
+
+.main aside h2 {
+    font-size: 1.2em; /*for mobile*/
+}
+
 
 /* ========================
     BANNERS
@@ -266,7 +281,7 @@ nav a {
     background-size: cover;
 }
 
-#banner-contact{
+#banner-contact {
     background : 
         linear-gradient(
             rgba(46, 112, 96, 0.65),
@@ -275,6 +290,131 @@ nav a {
         url(../img/banner-contact.jpg) no-repeat 0 0;
     background-position: center;
     background-size: cover;
+}
+
+/* ========================
+    HOME Page
+   ======================== */
+.home-section {
+    width: 100%;
+    padding: 20px 0px;
+    box-sizing: border-box;
+}
+
+#home-services {
+    border-bottom: 2px solid #EBEBEB;
+}
+
+.home-services-box {
+    width: 100%; /*for mobile*/
+    margin: 0; /*for mobile*/
+
+    box-sizing: border-box;
+    padding: 10px 10px 0 10px;
+}
+
+.home-services-box h4 {
+    margin-top: 0;
+    height: 35px;
+    line-height: 1.3em;
+}
+
+.home-services-box i,
+.home-services-box h4 {
+    display: inline-block;
+    vertical-align: middle;
+    margin: 0 10px 0 0;
+
+    color: #1D473D;
+}
+
+.home-services-box p {
+    font-size: .95em;
+    line-height: 1.5em;
+}
+
+#home-what {
+    background: #F5F5F5;
+}
+
+#home-what article {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+#home-what h1 {
+    font-size: 1.8em;
+    line-height: 1.2em;
+    margin: 0 0 40px 0;
+}
+
+#home-what a {
+    padding: 15px 30px;
+    color: white;
+    text-decoration: none;
+
+    background: #3F9982;
+    transition: background 0.1s linear;
+}
+
+#home-what a:hover {
+    background: #2E7060;
+}
+
+#home-what a:hover,
+#home-what a:visited {
+    color: white;
+}
+
+#home-testimonials {
+    background : 
+        linear-gradient(
+            rgba(77, 40, 45, 0.90),
+            rgba(77, 40, 45, 0.90)
+        ), 
+        url(../img/home-testimonials.jpg) no-repeat 0 0;
+    background-position: center;
+    background-size: cover;
+    height: 300px;
+}
+
+#home-testimonials h1 {
+    color: white;
+    margin: 0;
+}
+
+#home-contact h1 {
+    margin: 10px 0 0 0;
+    font-size: 2em;
+    line-height: 1em;
+}
+
+#home-contact p {
+    margin-bottom: 30px;
+}
+
+#home-contact a {
+    padding: 15px 40px;
+    color: white;
+    text-decoration: none;
+
+    background: #3F9982;
+    transition: background 0.1s linear;
+}
+
+#home-contact a:hover {
+    background: #2E7060;
+}
+
+#home-contact a:hover,
+#home-contact a:visited {
+    color: white;
+}
+
+
+#home-contact {
+    text-align: center;
+    font-size: 1.2em;
 }
 
 /* ========================
@@ -292,14 +432,6 @@ legend {
 .contact-panel h2 {
     font-weight: normal;
     margin: 0;
-}
-
-#contact-details {
-    margin-top: 30px; /*for mobile*/
-}
-
-#contact-details h2 {
-    margin-left: 15px;
 }
 
 .form-field {
@@ -331,11 +463,25 @@ legend {
     font-weight: bold;
 }
 
-#contact-map {
-    height: 300px; /*for mobile*/
-    width: 100%;
+#contact-submit {
     border: 0;
-    margin: 10px 0px 50px 0px;
+    color: white;
+    padding: 10px 18px;
+    
+    background: #337AB7;
+    transition: background 0.1s linear;
+}
+
+#contact-submit:hover {
+    background: #286090;
+}
+
+#contact-details {
+    margin-top: 30px; /*for mobile*/
+}
+
+#contact-details h2 {
+    margin-left: 15px;
 }
 
 #contact-details-box div {
@@ -356,6 +502,13 @@ legend {
 
 #contact-details-box i {
     color: #2E7060;
+}
+
+#contact-map {
+    height: 300px; /*for mobile*/
+    width: 100%;
+    border: 0;
+    margin: 10px 0px 50px 0px;
 }
 
 /* ==========================================================================
@@ -450,10 +603,55 @@ legend {
     }
 
 /* ========================
+    HOME Page
+   ======================== */
+
+    .home-services-box:nth-of-type(1),
+    .home-services-box:nth-of-type(2) {
+        display: inline-block;
+        width: 49%;
+        margin: 0 0.5%;
+        display: inline-block;
+        vertical-align: top;    
+    }
+
+    .home-services-box:nth-of-type(3),
+    .home-services-box:nth-of-type(4) {
+        display: inline-block;
+        width: 49%;
+        margin: 0 0.5%;
+        display: inline-block;
+        vertical-align: top;
+    }
+
+    #home-what h1 {
+        font-size: 2.2em;
+    }
+
+    .main article {
+        display: inline-block;
+        vertical-align: top;
+
+        width: 57%;
+        margin: 15px 20px 15px 0;
+    }
+
+    .main aside {
+        display: inline-block;
+        width: 28%;
+        margin: 15px 0;
+    }
+
+    .main aside h2 {
+        font-size: 1.5em;
+    }
+
+
+/* ========================
     CONTACT US Page
    ======================== */
 
-    .contact-panel{
+    .contact-panel {
         width: 48%;
         margin: 0 1%;
         display:inline-block;
@@ -508,15 +706,28 @@ legend {
     WIDE: Main
    ============ */
 
-    .main article {
-        float: left;
-        width: 57%;
+}
+
+@media only screen and (min-width: 1080px) {
+
+/* ========================
+    HOME Page
+   ======================== */
+
+    .home-services-box:nth-of-type(1),
+    .home-services-box:nth-of-type(2),
+    .home-services-box:nth-of-type(3),
+    .home-services-box:nth-of-type(4) {
+        width: 24%;
+        margin: 0 0.5%;
+        display: inline-block;
+        vertical-align: top;
     }
 
-    .main aside {
-        float: right;
-        width: 28%;
+    #home-what h1 {
+        font-size: 2.5em;
     }
+
 }
 
 @media only screen and (min-width: 1140px) {

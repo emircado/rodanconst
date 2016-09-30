@@ -36,7 +36,7 @@
                         </label><br>
                         <textarea name="contact-message" id="contact-message" rows=7 placeholder="Your message here..."></textarea><br>
                     </div>
-                    <input type="submit" value="Submit">
+                    <input id="contact-submit" type="submit" value="Submit">
                 </fieldset>
             </form>
         </div><div id="contact-details" class="contact-panel">
