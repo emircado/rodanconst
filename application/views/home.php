@@ -45,7 +45,14 @@
         </div>
         <div id="home-testimonials" class="home-section">
             <div class="wrapper">
-                <h1>TESTIMONIALS</h1>
+                <h2>CLIENT TESTIMONIALS</h2>
+                <div id="home-testimonials-box">
+                    <i class="fa fa-quote-left fa-lg" aria-hidden="true"></i>
+                    <div>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam sodales urna non odio egestas tempor. Nunc vel vehicula ante. Etiam bibendum iaculis libero, eget molestie nisl pharetra in. In semper consequat est, eu porta velit mollis nec. Curabitur posuere enim eget turpis feugiat tempor. Etiam ullamcorper lorem dapibus velit suscipit ultrices.</p>
+                        <h4>- Person A, homeowner</h4>
+                    </div>
+                </div>
             </div>
         </div>
         <div id="home-contact" class="home-section">

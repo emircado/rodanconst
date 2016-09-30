@@ -375,12 +375,40 @@ nav a {
         url(../img/home-testimonials.jpg) no-repeat 0 0;
     background-position: center;
     background-size: cover;
-    height: 300px;
+    min-height: 250px; /*for mobile*/
+    color: #F5F5F5;
 }
 
-#home-testimonials h1 {
-    color: white;
+#home-testimonials h2 {
     margin: 0;
+    font-weight: normal;
+}
+
+#home-testimonials-box {
+    margin-top: 20px; /*for mobile*/
+    font-size: .95em; /*for mobile*/
+    line-height: 1.4em; /*for mobile*/
+}
+
+#home-testimonials-box div {
+    width: 85%; /*for mobile*/
+    margin-right: 15px;
+}
+
+#home-testimonials-box p {
+    margin: 0;
+    text-align: justify;
+}
+
+#home-testimonials-box h4 {
+    margin-bottom: 0; /*for mobile*/
+}
+
+#home-testimonials-box i,
+#home-testimonials-box div {
+    display: inline-block;
+    vertical-align: top;
+    margin: 0 0 0 15px;
 }
 
 #home-contact h1 {
@@ -646,6 +674,33 @@ legend {
         font-size: 1.5em;
     }
 
+    #home-testimonials {
+        min-width: 300px;
+    }
+
+    #home-testimonials h2 {
+        margin: 0;
+        font-weight: normal;
+    }
+
+    #home-testimonials-box {
+        margin-top: 40px;
+        font-size: 1.1em;
+        line-height: 1.5em;
+    }
+
+    #home-testimonials-box div {
+        width: 85%;
+        margin-right: 15px;
+    }
+
+    #home-testimonials-box i {
+        font-size: 3em;
+    }
+
+    #home-testimonials-box h4 {
+        margin-bottom: 20px;
+    }
 
 /* ========================
     CONTACT US Page
