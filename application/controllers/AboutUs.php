@@ -15,6 +15,6 @@ class AboutUs extends CI_Controller {
 
         $this->load->view('header', $data);
         $this->load->view('aboutus');
-        $this->load->view('footer');
+        $this->load->view('footer', $data);
     }
 }

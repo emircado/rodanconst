@@ -134,6 +134,7 @@ nav a:visited {
 .main aside {
     color: white;
     padding: 0px 5% 10px;
+    text-align: justify;
 }
 
 .footer-container footer {
@@ -222,7 +223,6 @@ nav a {
 .main aside h2 {
     font-size: 1.2em; /*for mobile*/
 }
-
 
 /* ========================
     BANNERS
@@ -348,10 +348,6 @@ nav a {
     box-sizing: border-box;
 }
 
-#home-services {
-    border-bottom: 2px solid #EBEBEB;
-}
-
 .home-services-box {
     width: 100%; /*for mobile*/
     margin: 0; /*for mobile*/
@@ -381,6 +377,7 @@ nav a {
 }
 
 #home-what {
+    border-top: 2px solid #EBEBEB;
     background: #F5F5F5;
 }
 
@@ -494,6 +491,79 @@ nav a {
 #home-contact {
     text-align: center;
     font-size: 1.2em;
+}
+
+/* ========================
+    ABOUT US Page
+   ======================== */
+
+#about-images {
+    display: none;
+}
+
+#about-company>p {
+    text-align: justify;
+    line-height: 1.4em;
+}
+
+#about-services {
+    margin: 30px 0 0 0px; /*for mobile*/
+}
+
+#about-services li,
+#about-services p {
+    margin: 0;
+    list-style-type: none;
+    text-align: left;
+}
+
+#about-services li p:nth-of-type(1) {
+    font-weight: bold;
+    width: 80%;
+}
+
+#about-services li {
+    margin-bottom: 15px;
+}
+
+#about-services li p:not(:nth-of-type(1)) {
+    margin-left: 20px;
+    font-size: .9em;
+    list-style-position: inside;
+    text-indent: -1em;
+}
+
+#about-services li p:not(:nth-of-type(1)):before {
+    content: "- ";
+}
+
+#about-services li p:nth-of-type(1),
+#about-services i {
+    display: inline-block;
+    margin-right: 10px;
+    color: #1D473D;
+    vertical-align: middle;
+}
+
+#about-services ul {
+    padding-left: 0px; /*for mobile*/
+}
+
+#about-owner {
+    box-sizing: border-box;
+    display: block;
+    width: 100%;
+    margin: 20px 0 0 0;
+}
+
+#about-owner p {
+    line-height: 1.4em; /*for mobile*/
+}
+
+.contact-footer {
+    border-top: 2px solid #EBEBEB;
+    background: #F5F5F5;
+    padding-bottom: 45px;
 }
 
 /* ========================
@@ -792,6 +862,41 @@ legend {
 
     #home-testimonials-box h4 {
         margin-bottom: 20px;
+    }
+
+/* ========================
+    ABOUT US Page
+   ======================== */
+
+    #about-images {
+        width: 40%;
+        height: 350px;
+        background: red;
+        display: inline-block;
+        margin-right: 2%;
+
+        background : url(../img/about-images-1.jpg) no-repeat 0 0;
+        background-position: center;
+        background-size: cover;
+    }
+
+    #about-company {
+        display: inline-block;
+        width: 57%;
+        text-align: justify;
+        vertical-align: top;
+    }
+
+    #about-services {
+        margin: 30px 0 0 10px;
+    }
+
+    #about-services ul {
+        padding-left: 20px;
+    }
+
+    #about-owner p {
+        line-height: 1.5em;
     }
 
 /* ========================

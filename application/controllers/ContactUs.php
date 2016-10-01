@@ -17,7 +17,7 @@ class ContactUs extends CI_Controller {
         if ($this->input->post() == NULL) {
             $this->load->view('header', $data);
             $this->load->view('contactus');
-            $this->load->view('footer');
+            $this->load->view('footer', $data);
         // for contact us form submit
         } else {
             $name = $this->input->post('contact-name');

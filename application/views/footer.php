@@ -1,3 +1,15 @@
+        <?php if ($page == 'aboutus' OR $page == 'gallery') { ?>
+
+        <div id="home-contact" class="home-section contact-footer">
+            <div class="wrapper">
+                <h1>Need help with your home?</h1>
+                <p>Let's get in touch. Contact us by phone or email.</p>
+                <a href="<?php echo site_url('contactus') ?>">Contact Us</a>
+            </div>
+        </div>
+
+        <?php } ?>
+
         <div class="footer-container">
             <footer class="wrapper">
                 <p>&copy; Copyright 2016 - Rodan Construction | LIC# B731254 </p>

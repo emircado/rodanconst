@@ -60,9 +60,6 @@
                 &q=2666+Royal+Ann+Dr,+Union+City+CA
                 &zoom=15" allowfullscreen>
             </iframe>
-
-
-
         </div>
 
     </div> <!-- #main -->
