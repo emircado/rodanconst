@@ -567,6 +567,36 @@ nav a {
 }
 
 /* ========================
+    GALLERY Page
+   ======================== */
+
+.project-box h2 {
+    font-weight: normal;
+    margin-top: 0;
+    margin-bottom: 10px; /*for mobile*/
+}
+
+.project-box p {
+    font-size: .9em;
+    line-height: 1.2em;
+    margin-top: 0;
+}
+
+.project-img-main {
+    width: 100%;
+    height: 60vw;
+    background: yellow;
+}
+
+.project-img-thumb {
+    width: 24%;
+    height: 14.4vw;
+    background: green;
+    display: inline-block;
+    margin: 5px .5%; /*for mobile*/
+}
+
+/* ========================
     CONTACT US Page
    ======================== */
 
@@ -897,6 +927,39 @@ legend {
 
     #about-owner p {
         line-height: 1.5em;
+    }
+
+/* ========================
+    GALLERY Page
+   ======================== */
+
+    .project-box {
+        display: inline-block;
+        vertical-align: top;
+        width: 48%;
+        margin: 20px 1% 40px 1%;
+    }
+
+    .project-box h2 {
+        margin-bottom: 20px; /*for mobile*/
+    }
+
+    .project-box p {
+        line-height: 1.5em; /*for mobile*/
+    }
+
+    .project-img-main {
+        width: 100%;
+        height: 28.8vw;
+        background: yellow;
+    }
+
+    .project-img-thumb {
+        width: 24%;
+        height: 6.9vw;
+        background: green;
+        display: inline-block;
+        margin: 15px .5%; /*for mobile*/
     }
 
 /* ========================

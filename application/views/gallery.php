@@ -7,12 +7,40 @@
         </div>
     </div>
     <div class="main wrapper clearfix">
-
-        <article>
-            <header>
-                <h1>Coming Soon.</h1>
-            </header>
-
+        <div class="project-box">
+            <h2>Project name</h2>
+            <div class="project-img-main"></div>
+            <div class="project-img-strip">
+                <div class="project-img-thumb"> 
+                </div><div class="project-img-thumb">
+                </div><div class="project-img-thumb">
+                </div><div class="project-img-thumb"></div>
+            </div>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam non pretium mauris, vitae laoreet risus. 
+            Sed eget fringilla eros, in molestie sem.</p>
+        </div><div class="project-box">
+            <h2>Project name</h2>
+            <div class="project-img-main"></div>
+            <div class="project-img-strip">
+                <div class="project-img-thumb"> 
+                </div><div class="project-img-thumb">
+                </div><div class="project-img-thumb">
+                </div><div class="project-img-thumb"></div>
+            </div>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam non pretium mauris, vitae laoreet risus. 
+            Sed eget fringilla eros, in molestie sem.</p>
+        </div><div class="project-box">
+            <h2>Project name</h2>
+            <div class="project-img-main"></div>
+            <div class="project-img-strip">
+                <div class="project-img-thumb"> 
+                </div><div class="project-img-thumb">
+                </div><div class="project-img-thumb">
+                </div><div class="project-img-thumb"></div>
+            </div>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam non pretium mauris, vitae laoreet risus. 
+            Sed eget fringilla eros, in molestie sem.</p>
+        </div>
     </div> <!-- #main -->
 </div> <!-- #main-container -->
 
