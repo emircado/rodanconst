@@ -33,7 +33,10 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 
         <div class="header-container">
             <header class="wrapper clearfix">
-                <h1 class="title"><a href="<?php echo site_url('') ?>">Rodan Construction</a></h1>
+                <div>
+                    <h1 class="title"><a href="<?php echo site_url('') ?>">Rodan Construction</a></h1>
+                    <button id="menu-switch" type="button"><i class="fa fa-bars fa-lg" aria-hidden="true"></i></button>
+                </div>
                 <nav>
                     <ul>
                         <li><a <?php if ($page == "home") {echo 'class="nav-chosen"';} ?> href="<?php echo site_url('') ?>">HOME</a></li>

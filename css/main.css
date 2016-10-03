@@ -103,20 +103,20 @@ nav ul {
 
 nav a {
     display: block;
-    margin-bottom: 10px;
+    margin-bottom: 10px; /*override*/
     padding: 15px 0;
 
     text-align: center;
     text-decoration: none;
     font-weight: bold; /*override*/
 
-    color: white;
-    background: #e44d26;
+    color: white; /*override*/
+    background: #e44d26; /*overide*/
 }
 
 nav a:hover,
 nav a:visited {
-    color: white;
+    color: white; /*override*/
 }
 
 /* ==============
@@ -192,22 +192,68 @@ body {
     
     background : url(../img/logo.png) no-repeat 0 0;
     background-size: contain;
+
+    float:left;
 }
 
 .title a {
-    display : block;
-    height : 65px;
-    text-indent : -9999px; 
+    display: block;
+    height: 65px;
+    text-indent: -9999px;
 }
 
 /*navigation custom formats*/
+#menu-switch {
+    float: right;
+    padding: 8px 12px;
+    margin-top: 15px;
+
+    border: 0;
+}
+
+#menu-switch {
+    float: right;
+    padding: 8px 12px;
+    margin-top: 15px;
+
+    border: 2px solid #EBEBEB;
+    background: #F5F5F5;
+    color: #363636;
+
+    transition: all 0.1s linear;
+}
+
+#menu-switch:hover,
+#menu-switch:visited {
+    border: 2px solid #2A6658;
+    background: #2E7060;
+    color: #F5F5F5;
+}   
+
 nav {
-    display: none;
+    /*display: none;*/
+    margin: 85px 0 10px 0;
 }
 
 nav a {
-    background: #2E7060;
+    background: transparent;
     font-weight: normal;
+    color: #363636;
+    border-top: 2px solid #EBEBEB; /*for mobile*/
+    margin: 0; /*for mobile*/
+
+    transition: background 0.1s linear; /*for mobile*/
+}
+
+nav a:visited,
+nav a:hover {
+    color: #363636;
+}
+
+nav a:hover {
+    background: #2E7060; /*for mobile*/
+    font-weight: bold;
+    color: #F5F5F5; /*for mobile*/
 }
 
 .main aside {
@@ -253,8 +299,8 @@ nav a {
     height: 325px; /*for mobile*/
     background:
         linear-gradient(
-            rgba(46, 112, 96, 0.7),
-            rgba(46, 112, 96, 0.7)
+            rgba(29, 71, 61, 0.7),
+            rgba(29, 71, 61, 0.7)
         ), 
         url(../img/banner-home.jpg) no-repeat 0 0;
     background-position: center;
@@ -264,8 +310,8 @@ nav a {
 #banner-about {
     background : 
         linear-gradient(
-            rgba(46, 112, 96, 0.7),
-            rgba(46, 112, 96, 0.7)
+            rgba(29, 71, 61, 0.7),
+            rgba(29, 71, 61, 0.7)
         ), 
         url(../img/banner-about.jpg) no-repeat 0 0;
     background-position: center;
@@ -275,8 +321,8 @@ nav a {
 #banner-gallery {
     background : 
         linear-gradient(
-            rgba(46, 112, 96, 0.7),
-            rgba(46, 112, 96, 0.7)
+            rgba(29, 71, 61, 0.7),
+            rgba(29, 71, 61, 0.7)
         ), 
         url(../img/banner-gallery.jpg) no-repeat 0 0;
     background-position: center;
@@ -286,8 +332,8 @@ nav a {
 #banner-contact {
     background : 
         linear-gradient(
-            rgba(46, 112, 96, 0.7),
-            rgba(46, 112, 96, 0.7)
+            rgba(29, 71, 61, 0.7),
+            rgba(29, 71, 61, 0.7)
         ), 
         url(../img/banner-contact.jpg) no-repeat 0 0;
     background-position: center;
@@ -776,13 +822,14 @@ legend {
 /* ====================
     INTERMEDIATE: Menu
    ==================== */
-    nav {
-        display: initial;
+    #menu-switch {
+        display: none;
     }
 
     nav a:hover {
         border-bottom: 10px solid #2E7060;
         font-weight: bold;
+        background: transparent;
     }
 
     nav a {
@@ -790,19 +837,18 @@ legend {
         width: 21%;
         padding: 36px 2% 5px 2%;
         margin-bottom: 0;
+        border-top: 0;
 
         height: 25px;
-        background: transparent;
-        color: #363636;
 
         border-bottom: 10px solid transparent;
         transition: border-bottom 0.1s linear;
     }
 
-    nav a:hover,
-    nav a:visited {
+    nav a:visited,
+    nav a:hover {
         color: #363636;
-    }   
+    }
 
     nav li:first-child a {
         margin-left: 0;
@@ -834,6 +880,9 @@ legend {
     nav {
         float: right;
         width: 50%;
+
+        display: initial;
+        margin-top: 0;
     }
 
     .nav-chosen {
