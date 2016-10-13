@@ -12,29 +12,55 @@
             <form name="contact-us-form" method="POST" accept-charset="utf-8" action="<?php echo site_url('contactus') ?>">
                 <fieldset>
                     <legend><h2>Send a Message</h2></legend>
+                    <?php if ($status != 'na') { ?>
+                    <div id="contact-help" class="contact-<?php echo $status ?>">
+                        <?php if ($status == 'success') { ?>
+                            <i class="fa fa-check-circle fa-lg" aria-hidden="true"></i>
+                            <h3>Message sent successfully.</h3>
+                            <p>Thank you for contacting Rodan Construction. We will get back to you as soon as we can.</p>
+                        <?php } else if ($status == 'error') { ?>
+                            <i class="fa fa-exclamation-circle fa-lg" aria-hidden="true"></i>
+                            <h3>Error</h3>
+                            <p><?php echo validation_errors() ?></p>
+                        <?php } ?>
+                    </div>
+                    <?php } ?>
                     <div class="form-field">
                         <label for="contact-name">
                             Name <abbr title="required" required>*</abbr>
                         </label><br>
-                        <input type="text" name="contact-name" id="contact-name"><br>
+                        <input type="text" name="contact-name" id="contact-name" 
+                            <?php if ($status == 'error') {
+                                echo 'value="'.set_value('contact-name').'"';
+                            } ?>><br>
                     </div>
                     <div class="form-field">
                         <label for="contact-email">
                             Email <abbr title="required" required>*</abbr>
                         </label><br>
-                        <input type="email" name="contact-email" id="contact-email"><br>
+                        <input type="text" name="contact-email" id="contact-email"
+                            <?php if ($status == 'error') {
+                                echo 'value="'.set_value('contact-email').'"';
+                            } ?>><br>
                     </div>
                     <div class="form-field">
                         <label for="contact-phone">
                             Phone <abbr title="required" required>*</abbr>
                         </label><br>
-                        <input type="tel" name="contact-phone" id="contact-phone"><br>
+                        <input type="text" name="contact-phone" id="contact-phone"
+                            <?php if ($status == 'error') {
+                                echo 'value="'.set_value('contact-phone').'"';
+                            } ?>><br>
                     </div>
                     <div class="form-field">
                         <label for="contact-message">
                             Message <abbr title="required" required>*</abbr>
                         </label><br>
-                        <textarea name="contact-message" id="contact-message" rows=7 placeholder="Your message here..."></textarea><br>
+                        <textarea name="contact-message" id="contact-message" rows=7 placeholder="Your message here..."><?php 
+                            if ($status == 'error') {
+                                echo set_value('contact-message');
+                            } 
+                        ?></textarea><br>
                     </div>
                     <input id="contact-submit" type="submit" value="Submit">
                 </fieldset>

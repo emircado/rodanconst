@@ -778,6 +778,36 @@ legend {
     background: #286090;
 }
 
+#contact-help {
+    font-size: .9em;
+    box-sizing: border-box;
+    padding: 10px;
+    margin: 5px 0 15px 0;
+}
+
+#contact-help h3,
+#contact-help p {
+    margin: 0;
+}
+
+#contact-help h3,
+#contact-help i {
+    display: inline-block;
+    margin-left: 5px;
+}
+
+.contact-success {
+    color: #468847;
+    background: #DFF0D8;
+    border: 2px solid #468847;
+}
+
+.contact-error {
+    color: #C7254E;
+    background: #F9F2F4;
+    border: 2px solid #C7254E;
+}
+
 #contact-details {
     margin-top: 30px; /*for mobile*/
 }
