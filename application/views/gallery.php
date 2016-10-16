@@ -16,8 +16,7 @@
                 </div><div id="prj-4" class="project-img-thumb">
                 </div><div id="prj-5" class="project-img-thumb"></div>
             </div>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam non pretium mauris, vitae laoreet risus. 
-            Sed eget fringilla eros, in molestie sem.</p>
+            <p></p>
         </div><div class="project-box">
             <h2>Virgil</h2>
             <div id="prj-6" class="project-img-main"></div>
@@ -27,8 +26,7 @@
                 </div><div id="prj-9" class="project-img-thumb">
                 </div><div id="prj-10" class="project-img-thumb"></div>
             </div>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam non pretium mauris, vitae laoreet risus. 
-            Sed eget fringilla eros, in molestie sem.</p>
+            <p></p>
         </div><div class="project-box">
             <h2>Residence</h2>
             <div id="prj-11" class="project-img-main"></div>
@@ -38,8 +36,7 @@
                 </div><div id="prj-14" class="project-img-thumb">
                 </div><div id="prj-15" class="project-img-thumb"></div>
             </div>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam non pretium mauris, vitae laoreet risus. 
-            Sed eget fringilla eros, in molestie sem.</p>
+            <p></p>
         </div>
     </div> <!-- #main -->
 </div> <!-- #main-container -->

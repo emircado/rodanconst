@@ -781,7 +781,7 @@ legend {
 #contact-help {
     font-size: .9em;
     box-sizing: border-box;
-    padding: 10px;
+    padding: 5px 10px;
     margin: 5px 0 15px 0;
 }
 
@@ -794,6 +794,7 @@ legend {
 #contact-help i {
     display: inline-block;
     margin-left: 5px;
+    vertical-align: middle;
 }
 
 .contact-success {
@@ -1029,9 +1030,11 @@ legend {
     #home-testimonials h2 {
         margin: 0;
         font-weight: normal;
+        display: none;
     }
 
     #home-testimonials-box {
+        display: none;
         margin-top: 40px;
         font-size: 1.1em;
         line-height: 1.5em;

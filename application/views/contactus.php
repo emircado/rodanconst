@@ -50,6 +50,7 @@
                         <input type="text" name="contact-phone" id="contact-phone"
                             <?php if ($status == 'error') {
                                 echo 'value="'.set_value('contact-phone').'"';
+
                             } ?>><br>
                     </div>
                     <div class="form-field">
@@ -87,6 +88,5 @@
                 &zoom=15" allowfullscreen>
             </iframe>
         </div>
-
     </div> <!-- #main -->
 </div> <!-- #main-container -->
