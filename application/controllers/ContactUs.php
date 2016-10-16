@@ -9,6 +9,7 @@ class ContactUs extends CI_Controller {
         $this->load->helper('url');
 
         $this->load->library('form_validation');
+        $this->load->library('email');
     }
 
     public function index()
@@ -28,15 +29,27 @@ class ContactUs extends CI_Controller {
             $phone = $this->input->post('contact-phone');
             $message = $this->input->post('contact-message');
             
-            // form error
-            if ($this->form_validation->run() == FALSE) {
-                $data['status'] = 'error';
-            
-            // form success
+            // form validated
             } else {
-                $data['status'] = 'success';
+                $email_msg = "You received a message through the website Contact page.\n\nFrom:   ".
+                            $name."\nEmail:   ".$email."\nPhone:   ".$phone."\n\nMessage:\n".$message;
+            
+                $this->email->from('contactus@rodanconstruction.com', 'Rodan Construction Contact Page');
+                $this->email->to('dan@rodanconstruction.com');
+                
+                $this->email->subject('A new message from Rodan Construction Contact page');
+                $this->email->message($email_msg);
+            
+                // email error
+                if (! $this->email->send()) {
+                    $data['status'] = 'error';
+                    $data['err_type'] = 'email';
+                
+                // email sent
+                } else {
+                    $data['status'] = 'success';
+                }
             }
-
         }
         // will only execute below if normal page access
         $this->load->view('header', $data);

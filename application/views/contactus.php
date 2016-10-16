@@ -21,7 +21,11 @@
                         <?php } else if ($status == 'error') { ?>
                             <i class="fa fa-exclamation-circle fa-lg" aria-hidden="true"></i>
                             <h3>Error</h3>
-                            <p><?php echo validation_errors() ?></p>
+                            <?php if ($err_type == 'form') { ?>
+                                <p><?php echo validation_errors() ?></p>
+                            <?php } else if ($err_type == 'email') { ?>
+                                <p>Our email server is encountering problems right now. Please contact us through phone or email.</p>
+                            <?php } ?>
                         <?php } ?>
                     </div>
                     <?php } ?>
