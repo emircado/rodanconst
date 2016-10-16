@@ -10,6 +10,26 @@ class ContactUs extends CI_Controller {
 
         $this->load->library('form_validation');
         $this->load->library('email');
+
+        $config['protocol'] = 'smtp';
+        //$config['mailpath'] = '/usr/sbin/sendmail';
+        $config['smtp_host'] = 'ssl://smtp.rodanconstruction.com';
+        $config['smtp_user'] = 'contactus@rodanconstruction.com';
+        $config['smtp_pass'] = 'xxxx'; //edit for production
+        $config['smtp_port'] = 465; 
+        $config['smtp_timeout'] = 5;
+        $config['wordwrap'] = TRUE;
+        $config['wrapchars'] = 76;
+        $config['mailtype'] = 'html';
+        $config['charset'] = 'utf-8';
+        $config['validate'] = FALSE;
+        $config['priority'] = 3;
+        $config['crlf'] = "\r\n";
+        $config['newline'] = "\r\n";
+        $config['bcc_batch_mode'] = FALSE;
+        $config['bcc_batch_size'] = 200;
+
+        $this->email->initialize($config);
     }
 
     public function index()
@@ -28,6 +48,12 @@ class ContactUs extends CI_Controller {
             $email = $this->input->post('contact-email');
             $phone = $this->input->post('contact-phone');
             $message = $this->input->post('contact-message');
+            
+
+            // form error
+            if ($this->form_validation->run() == FALSE) {
+                $data['status'] = 'error';
+                $data['err_type'] = 'form';
             
             // form validated
             } else {
