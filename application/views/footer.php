@@ -2,17 +2,18 @@
 
         <div id="home-contact" class="home-section contact-footer">
             <div class="wrapper">
-                <h1>Need help with your home?</h1>
-                <p>Let's get in touch. Contact us by phone or email.</p>
+                <h3>Need help with your home?</h2>
+                <p>Let's get in touch. Contact us <br>by phone or email.</p>
                 <a href="<?php echo site_url('contactus') ?>">Contact Us</a>
             </div>
         </div>
+
 
         <?php } ?>
 
         <div class="footer-container">
             <footer class="wrapper">
-                <p>&copy; Copyright 2016 - Rodan Construction | LIC# B731254 </p>
+                <p>&copy; Copyright <?= date('Y') ?><br><span> - </span>Rodan Construction | LIC# B731254 </p>
             </footer>
         </div>
 

@@ -34,12 +34,6 @@ video {
     vertical-align: middle;
 }
 
-/*fieldset {
-    border: 0;
-    margin: 0;
-    padding: 0;
-}*/
-
 textarea {
     resize: vertical;
 }
@@ -51,223 +45,116 @@ textarea {
     padding: 0.2em 0;
 }
 
-
-/* ===== Initializr Styles ==================================================
-   Author: Jonathan Verrecchia - verekia.com/initializr/responsive-template
-   ========================================================================== */
-/*OVERRIDE*/
-body {
-    font: 16px/26px Helvetica, Helvetica Neue, Arial;
-}
-
-.wrapper {
-    width: 90%;
-    margin: 0 5%;
-}
-
-/* ===================
-    ALL: Orange Theme
-   =================== */
-
-/*OVERRIDE*/
-.header-container {
-    border-bottom: 20px solid #e44d26;
-}
-
-/*OVERRIDE*/
-.footer-container,
-.main aside {
-    border-top: 20px solid #e44d26;
-}
-
-/*OVERRIDE*/
-.header-container,
-.footer-container,
-.main aside {
-    background: #f16529;
-}
-
-.title {
-    color: white;
-}
-
-/* ==============
-    MOBILE: Menu
-   ============== */
-
-nav ul {
-    margin: 0;
-    padding: 0;
-    list-style-type: none;
-}
-
-nav a {
-    display: block;
-    margin-bottom: 10px; /*override*/
-    padding: 15px 0;
-
-    text-align: center;
-    text-decoration: none;
-    font-weight: bold; /*override*/
-
-    color: white; /*override*/
-    background: #e44d26; /*overide*/
-}
-
-nav a:hover,
-nav a:visited {
-    color: white; /*override*/
-}
-
-/* ==============
-    MOBILE: Main
-   ============== */
-
-.main {
-    padding: 40px 0 30px 0;
-}
-
-.main article h1 {
-    font-size: 2em;
-}
-
-.main aside {
-    color: white;
-    padding: 0px 5% 10px;
-    text-align: justify;
-}
-
-.footer-container footer {
-    color: white;
-    padding: 5px 0;
-}
-
-/* ===============
-    ALL: IE Fixes
-   =============== */
-
-.ie7 .title {
-    padding-top: 20px;
-}
-
 /* ==========================================================================
    Author's custom styles
    ========================================================================== */
+.wrapper {
+    width: 90%;
+    max-width: 1026px;
+    margin: 0 auto;
+}
 
 body {
     font-family: 'PT Sans', sans-serif;
 }
 
-/* ===================
-    ALL: Custom Theme
-   =================== */
-
 .header-container {
-    border-bottom: 0;
     padding-top: 10px;
     background: #FFFFFF;
+
+    -webkit-box-shadow: 0 0 4px rgba(0, 0, 0, .5);
+       -moz-box-shadow: 0 0 4px rgba(0, 0, 0, .5);
+            box-shadow: 0 0 4px rgba(0, 0, 0, .5);
+
+    font-size: 0px;
+}
+/*for sticky header*/
+.header-container {
+    position: fixed; 
+    top: 0; 
+    width: 100%;
+    z-index: 10000;
+}
+
+/*margin for sticky header*/
+.main-container {
+    margin-top: 70px;
+    min-height: 800px;
+}
+.main.wrapper {
+    padding: 25px 0;
 }
 
 /*for footer*/
 .footer-container {
     background: #F1EFE6;
     border-top: 2px solid #E5E3dA;
+    padding: 10px 0;
 }
 
 .footer-container p {
-    margin: 10px 0;
+    margin: 0;
     color: #363636;
     font-size: .9em;
+    text-align: center;
+}
+.footer-container span {
+    display: none;
 }
 
 /* for logo at header*/
-.title {
-    text-decoration:none;
-    border:0;
-    width : 200px;
-    height : 65px;
-    margin : 0;
-    padding : 0;
-    margin-bottom : 10px;
-    
-    background : url(../img/logo.png) no-repeat 0 0;
-    background-size: contain;
-
-    float:left;
+.header-container .logo-box {
+    padding-bottom: 10px;
+}
+.header-container .logo-box a {
+    display: inline-block;
+}
+.header-container .logo {
+    width: 130px;
+    height: auto;
+    display: inline-block;
 }
 
-.title a {
-    display: block;
-    height: 65px;
-    text-indent: -9999px;
-}
-
-/*navigation custom formats*/
+/*NAVIGATION*/
 #menu-switch {
     float: right;
     padding: 8px 12px;
-    margin-top: 15px;
-
+    margin-top: 8px;
     border: 0;
-}
-
-#menu-switch {
-    float: right;
-    padding: 8px 12px;
-    margin-top: 15px;
-
-    border: 2px solid #EBEBEB;
     background: #F5F5F5;
     color: #363636;
-
     transition: all 0.1s linear;
+    font-size: initial;
 }
-
-#menu-switch:hover,
-#menu-switch:visited {
-    border: 2px solid #2A6658;
-    background: #2E7060;
+#menu-switch.open {
+    background: #ADADAD;
     color: #F5F5F5;
 }   
-
-nav {
-    /*display: none;*/
-    margin: 85px 0 10px 0;
+#main-nav { 
+    display: none;
 }
-
-nav a {
-    background: transparent;
-    font-weight: normal;
+#main-nav ul {
+    margin: 0;
+    list-style-type: none;
+    padding: 0;
+}
+#main-nav ul li {
+    display: block;
+    border-top: 1px solid #EBEBEB;
+    text-align: center;
+}
+#main-nav a {
+    padding: 8px 0;
+    font-size: 18px;
+    text-decoration: none;
     color: #363636;
-    border-top: 2px solid #EBEBEB; /*for mobile*/
-    margin: 0; /*for mobile*/
-
-    transition: background 0.1s linear; /*for mobile*/
+    display: block;
 }
-
-nav a:visited,
-nav a:hover {
-    color: #363636;
-}
-
-nav a:hover {
-    background: #2E7060; /*for mobile*/
-    font-weight: bold;
-    color: #F5F5F5; /*for mobile*/
-}
-
-.main aside {
-    border-top: 20px solid #2E7060;
+#main-nav li.active {
     background: #368571;
 }
-
-.main aside p {
-    font-size: .95em;
-    line-height: 1.6em;
-}
-
-.main aside h2 {
-    font-size: 1.2em; /*for mobile*/
+#main-nav li.active a {
+    color: white;
 }
 
 /* ========================
@@ -276,7 +163,7 @@ nav a:hover {
 
 .banner {
     width: 100%;
-    height: 120px; /*for mobile*/
+    height: 120px; 
 }
 
 .banner .wrapper {
@@ -287,16 +174,17 @@ nav a:hover {
 
 .banner-name {
     font-weight: bold;
-    font-size: 2.5em; /*for mobile*/
+    font-size: 2.5em; 
 
     position: absolute;
-    bottom: 15px; /*for mobile*/
+    bottom: 10px; 
     left: 0;
     margin: 0;
+    line-height: 1em;
 }
 
 #banner-home {
-    height: 325px; /*for mobile*/
+    height: 325px; 
     background:
         linear-gradient(
             rgba(29, 71, 61, 0.7),
@@ -343,24 +231,25 @@ nav a:hover {
 #banner-home .banner-name {
     position: absolute;
     left: 0;
-    bottom: 15%; /*for mobile*/
+    bottom: 15%; 
     width: 100%;
     text-align: center;
-    color: #F5F5F5;
+    color: #FBFBFB;
 
-    font-size: 1.5em; /*for mobile*/
-    line-height: 1.5em; /*for mobile*/
+    font-size: 1.5em; 
+    line-height: 1.5em; 
 }
 
-#banner-home h3 {
+#banner-home span {
+    display: block;
     font-weight: normal;
-    font-size: .9em; /*for mobile*/
-    line-height: .9em; /*for mobile*/
+    font-size: .9em; 
+    line-height: .9em; 
 }
 
 #banner-home h1,
-#banner-home h3 {
-    margin: 0 0 20px 0; /*for mobile*/
+#banner-home span {
+    margin: 0 0 20px 0; 
 }
 
 #banner-home button {
@@ -378,7 +267,6 @@ nav a:hover {
 #banner-home button:hover {
     background: #4D282D;
 }
-
 #banner-home button:hover,
 #banner-home button:visited {
     color: white;
@@ -393,69 +281,80 @@ nav a:hover {
     padding: 20px 0px;
     box-sizing: border-box;
 }
-
-.home-services-box {
-    width: 100%; /*for mobile*/
-    margin: 0; /*for mobile*/
-
-    box-sizing: border-box;
-    padding: 10px 10px 0 10px;
+/*HOME SERVICES SECTION*/
+#home-services h3 {
+    text-align: center;
+    margin: 0;
+    font-weight: 400;
+    color: #1D473D;
+    font-size: 1.6em;
+    padding-top: 10px;
 }
-
-.home-services-box h4 {
-    margin-top: 0;
-    height: 35px;
-    line-height: 1.3em;
+#home-services .box {
+    text-align: center;
+    padding: 20px 0 10px 0;
 }
-
-.home-services-box i,
-.home-services-box h4 {
-    display: inline-block;
-    vertical-align: middle;
-    margin: 0 10px 0 0;
-
+#home-services .box i {
+    display: none;
     color: #1D473D;
 }
-
-.home-services-box p {
-    font-size: .95em;
-    line-height: 1.5em;
+#home-services .box h4 {
+    margin: 0 0 5px 0;
+    color: #1D473D;
 }
-
+#home-services .box p {
+    margin: 0;
+}
+#home-services .box br {
+    display: none;
+}
+/*HOME WHAT/WHY SECTION*/
 #home-what {
     border-top: 2px solid #EBEBEB;
     background: #F5F5F5;
 }
-
-#home-what article {
+#home-what-is {
     text-align: center;
-    margin-bottom: 40px;
+    margin: 10px 0 30px 0;
 }
-
-#home-what h1 {
+#home-what-is span {
+    font-weight: bold;
+    display: block;
     font-size: 1.8em;
     line-height: 1.2em;
-    margin: 0 0 40px 0;
+    margin: 0 0 35px 0;
 }
-
-#home-what a {
-    padding: 15px 30px;
+#home-what-is a {
+    display: inline-block;
+    padding: 12px 25px;
     color: white;
     text-decoration: none;
 
     background: #3F9982;
     transition: background 0.1s linear;
 }
-
-#home-what a:hover {
+#home-what-is a:hover {
     background: #2E7060;
 }
-
-#home-what a:hover,
-#home-what a:visited {
+#home-what-is a:hover,
+#home-what-is a:visited {
     color: white;
 }
+#home-what-why {
+    background: #368571;
+    border-top: 20px solid #2E7060;
+    color: white;
+    text-align: center;
+    padding: 15px;
+}
+#home-what-why h3 {
+    margin: 0;
+}
+#home-what-why p {
+    margin: 15px 0 5px 0;
+}
 
+/*HOME TESTIMONIALS SECTION*/
 #home-testimonials {
     background : 
         linear-gradient(
@@ -465,58 +364,51 @@ nav a:hover {
         url(../img/home-testimonials.jpg) no-repeat 0 0;
     background-position: center;
     background-size: cover;
-    min-height: 250px; /*for mobile*/
-    color: #F5F5F5;
+    min-height: 250px;
+    color: #FBFBFB;
 }
-
-#home-testimonials h2 {
+#home-testimonials h3 {
     margin: 0;
+    font-size: 1.5em;
+    text-align: center;
     font-weight: normal;
 }
-
 #home-testimonials-box {
-    margin-top: 20px; /*for mobile*/
-    font-size: .95em; /*for mobile*/
-    line-height: 1.4em; /*for mobile*/
+    padding-top: 15px;
+    font-size: .95em;
+    line-height: 1.4em;
 }
-
-#home-testimonials-box div {
-    width: 85%; /*for mobile*/
-    margin-right: 15px;
+#home-testimonials-box .testimonial {
+    padding: 0 15px;
 }
-
-#home-testimonials-box p {
+#home-testimonials-box .testimonial p {
     margin: 0;
     text-align: justify;
     font-style: italic;
 }
-
-#home-testimonials-box h4 {
-    margin-bottom: 0; /*for mobile*/
+#home-testimonials-box .testimonial h4 {
+    margin-bottom: 0;
 }
-
-#home-testimonials-box i,
-#home-testimonials-box div {
-    display: inline-block;
-    vertical-align: top;
-    margin: 0 0 0 15px;
-}
-
 #home-testimonials-box i {
-    margin-bottom: 10px;
+    padding: 0 0 5px 15px;
 }
 
-#home-contact h1 {
-    margin: 10px 0 0 0;
+/*HOME CONTACT SECTION*/
+#home-contact {
+    text-align: center;
+    font-size: 1.2em;
+    padding: 30px 0;
+}
+#home-contact h3 {
+    margin: 0;
     font-size: 2em;
     line-height: 1em;
 }
-
 #home-contact p {
-    margin-bottom: 30px;
+    margin-bottom: 15px;
 }
-
 #home-contact a {
+    display: inline-block;
     padding: 15px 40px;
     color: white;
     text-decoration: none;
@@ -524,19 +416,12 @@ nav a:hover {
     background: #3F9982;
     transition: background 0.1s linear;
 }
-
 #home-contact a:hover {
     background: #2E7060;
 }
-
 #home-contact a:hover,
 #home-contact a:visited {
     color: white;
-}
-
-#home-contact {
-    text-align: center;
-    font-size: 1.2em;
 }
 
 /* ========================
@@ -546,16 +431,25 @@ nav a:hover {
 #about-images {
     display: none;
 }
+#about-company h2 {
+    margin: 0;
+    padding-bottom: 15px;
+}
 
 #about-company>p {
-    text-align: justify;
-    line-height: 1.4em;
+    margin: 0;
 }
 
 #about-services {
-    margin: 30px 0 0 0px; /*for mobile*/
+    margin: 30px 0 0 0px; 
 }
-
+#about-services h3 {
+    margin: 0;
+    padding-bottom: 15px;
+}
+#about-services ul {
+    margin: 0;
+}
 #about-services li,
 #about-services p {
     margin: 0;
@@ -574,7 +468,7 @@ nav a:hover {
 
 #about-services li p:not(:nth-of-type(1)) {
     margin-left: 20px;
-    font-size: .9em;
+    font-size: .95em;
     list-style-position: inside;
     text-indent: -1em;
 }
@@ -592,24 +486,35 @@ nav a:hover {
 }
 
 #about-services ul {
-    padding-left: 0px; /*for mobile*/
+    padding-left: 0px; 
 }
 
 #about-owner {
     box-sizing: border-box;
     display: block;
     width: 100%;
-    margin: 20px 0 0 0;
+    margin: 30px 0 10px 0;
+
+    border-top: 20px solid #2E7060;
+    background: #368571;
+    color: white;
+    padding: 0px 5% 10px;
+
+}
+#about-owner h2 {
+    margin: 15px 0;
+    font-size: 1.2em;
 }
 
 #about-owner p {
-    line-height: 1.4em; /*for mobile*/
+    margin: 15px 0;
+    text-align: justify;
+    font-size: .95em;
 }
 
 .contact-footer {
     border-top: 2px solid #EBEBEB;
     background: #F5F5F5;
-    padding-bottom: 45px;
 }
 
 /* ========================
@@ -619,7 +524,7 @@ nav a:hover {
 .project-box h2 {
     font-weight: normal;
     margin-top: 0;
-    margin-bottom: 10px; /*for mobile*/
+    margin-bottom: 10px; 
 }
 
 .project-box p {
@@ -639,7 +544,7 @@ nav a:hover {
     height: 14.4vw;
     background: green;
     display: inline-block;
-    margin: 5px .5%; /*for mobile*/
+    margin: 5px .5%; 
 }
 
 #prj-1 {
@@ -810,7 +715,7 @@ legend {
 }
 
 #contact-details {
-    margin-top: 30px; /*for mobile*/
+    margin-top: 30px; 
 }
 
 #contact-details h2 {
@@ -838,7 +743,7 @@ legend {
 }
 
 #contact-map {
-    height: 300px; /*for mobile*/
+    height: 300px; 
     width: 100%;
     border: 0;
     margin: 10px 0px 50px 0px;
@@ -847,90 +752,74 @@ legend {
 /* ==========================================================================
    Media Queries
    ========================================================================== */
-
+@media only screen and (max-width: 639px) {
+    .header-container>.wrapper {
+        margin: 0;
+        width: 100%;
+    }
+}
 @media only screen and (min-width: 640px) {
 
 /* ====================
     INTERMEDIATE: Menu
    ==================== */
+    .header-container>.wrapper>.wrapper {
+        margin: 0;
+        display: inline-block;
+        width: unset;
+        max-width: unset;
+        vertical-align: bottom;
+    }   
+    .header-container .logo-box {
+        display: inline-block;
+        padding-right: 20px;
+        vertical-align: bottom:;
+    }
     #menu-switch {
         display: none;
     }
-
-    nav a:hover {
+    .header-container .spacer {
+        display: inline-block;
+        width: calc(100% - 150px);
+        text-align: right;
+    } 
+    #main-nav {
+        display: inline-block;
+        width: 100%;
+        max-width: 450px;
+    }
+    #main-nav ul {
+        font-size: 0;
+    }
+    #main-nav ul li {
+        border: 0;
+        background: transparent;
+        width: 25%;
+        display: inline-block;
+        border-bottom: 10px solid transparent;
+        transition: 0.1s linear;
+        vertical-align: bottom;
+    }
+    #main-nav ul li a {
+        padding: 15px 0 5px 0;
+        font-size: initial
+    }
+    #main-nav ul li.active {
+        background: transparent;
         border-bottom: 10px solid #2E7060;
         font-weight: bold;
-        background: transparent;
     }
-
-    nav a {
-        float: left;
-        width: 21%;
-        padding: 36px 2% 5px 2%;
-        margin-bottom: 0;
-        border-top: 0;
-
-        height: 25px;
-
-        border-bottom: 10px solid transparent;
-        transition: border-bottom 0.1s linear;
-    }
-
-    nav a:visited,
-    nav a:hover {
+    #main-nav ul li.active a {
         color: #363636;
     }
-
-    nav li:first-child a {
-        margin-left: 0;
+    #main-nav ul li a:visited,
+    #main-nav ul li a:hover {
+        color: #363636;
     }
-
-    nav li:last-child a {
-        margin-right: 0;
-    }
-
-    /*for sticky header*/
-    .header-container {
-        position: fixed; 
-        top: 0; 
-        width: 100%;
-        height: 75px;
-        z-index: 10000;
-    }
-
-    /*margin for sticky header*/
-    .main-container {
-        margin-top: 85px;
-        min-height: 800px;
-    }
-
-    .title {
-        float: left;
-    }
-
-    nav {
-        float: right;
-        width: 50%;
-
-        display: initial;
-        margin-top: 0;
-    }
-
-    .nav-chosen {
+    #main-nav ul li:hover {
         border-bottom: 10px solid #2E7060;
-        font-weight: bold;    
-    }
-
-/* ========================
-    INTERMEDIATE: IE Fixes
-   ======================== */
-
-    nav ul li {
-        display: inline;
-    }
-
-    .oldie nav a {
-        margin: 0 0.7%;
+        font-weight: bold;
+        transition: 0.1s linear;
     }
 
 /* ========================
@@ -943,11 +832,10 @@ legend {
 
     .banner-name {
         font-size: 3.5em;
-        bottom: 25px;
     }
 
     #banner-home {
-        height: 600px;
+        height: 625px;
     }
 
     #banner-home .banner-name {
@@ -957,13 +845,13 @@ legend {
         width: 100%;
         text-align: center;
 
-        font-size: 2.5em; /*for mobile*/
+        font-size: 2.5em; 
     }
 
     #banner-home h3 {
         font-weight: normal;
-        font-size: .9em; /*for mobile*/
-        line-height: .9em; /*for mobile*/
+        font-size: .9em; 
+        line-height: .9em; 
     }
 
     #banner-home h1,
@@ -982,75 +870,60 @@ legend {
 /* ========================
     HOME Page
    ======================== */
-
-    .home-services-box:nth-of-type(1),
-    .home-services-box:nth-of-type(2) {
-        display: inline-block;
-        width: 49%;
-        margin: 0 0.5%;
-        display: inline-block;
-        vertical-align: top;    
+   /*HOME SERVICES SECTIOn*/
+    #home-services h3 {
+        display: none;
     }
-
-    .home-services-box:nth-of-type(3),
-    .home-services-box:nth-of-type(4) {
+    #home-services .box-group {
+        font-size: 0;
+    }
+    #home-services .box {
         display: inline-block;
-        width: 49%;
-        margin: 0 0.5%;
+        font-size: initial;
+        text-align: left;
+        vertical-align: top;
+        width: 50%;
+        padding: 10px 15px;
+        box-sizing: border-box;
+    }
+    #home-services .box i {
         display: inline-block;
         vertical-align: top;
+        margin-top: 10px;
+        margin-right: 5px;
+    }
+    #home-services .box h4 {
+        display: inline-block;
+        vertical-align: top;
+        margin: 0 0 5px 0;
+    }
+    #home-services .box br {
+        display: inline-block;
     }
 
-    #home-what h1 {
+    /*HOME WHAT/WHY SECTION*/
+    #home-what #home-what-is span {
         font-size: 2.2em;
     }
 
-    .main article {
-        display: inline-block;
-        vertical-align: top;
-
-        width: 57%;
-        margin: 15px 20px 15px 0;
+    /*HOME TESTIMONIALS SECTION*/
+    #home-testimonials h3 {
+        text-align: left;
     }
-
-    .main aside {
-        display: inline-block;
-        width: 28%;
-        margin: 15px 0;
+    #home-testimonials .testimonial {
+        padding: 0;
     }
-
-    .main aside h2 {
-        font-size: 1.5em;
-    }
-
-    #home-testimonials {
-        min-width: 300px;
-    }
-
-    #home-testimonials h2 {
-        margin: 0;
-        font-weight: normal;
-        display: none;
-    }
-
-    #home-testimonials-box {
-        display: none;
-        margin-top: 40px;
-        font-size: 1.1em;
-        line-height: 1.5em;
-    }
-
-    #home-testimonials-box div {
-        width: 85%;
-        margin-right: 15px;
-    }
-
     #home-testimonials-box i {
-        font-size: 3em;
+        font-size: 2em;
+        padding: 0 0 8px 0;
     }
 
     #home-testimonials-box h4 {
-        margin-bottom: 20px;
+        margin-top: 15px;
+    }
+
+    #home-contact p br {
+        display: none;
     }
 
 /* ========================
@@ -1072,7 +945,6 @@ legend {
     #about-company {
         display: inline-block;
         width: 57%;
-        text-align: justify;
         vertical-align: top;
     }
 
@@ -1100,11 +972,11 @@ legend {
     }
 
     .project-box h2 {
-        margin-bottom: 20px; /*for mobile*/
+        margin-bottom: 20px; 
     }
 
     .project-box p {
-        line-height: 1.5em; /*for mobile*/
+        line-height: 1.5em; 
     }
 
     .project-img-main {
@@ -1118,7 +990,7 @@ legend {
         height: 6.9vw;
         background: green;
         display: inline-block;
-        margin: 15px .5%; /*for mobile*/
+        margin: 15px .5%; 
     }
 
 /* ========================
@@ -1148,60 +1020,88 @@ legend {
 }
 
 @media only screen and (min-width: 768px) {
-
-/* ====================
-    WIDE: CSS3 Effects
-   ==================== */
-
-/*    .header-container,
-    .main aside {
-        -webkit-box-shadow: 0 2px 4px #636363;
-           -moz-box-shadow: 0 2px 4px #636363;
-                box-shadow: 0 2px 4px #636363;
+    #main-nav {
+        max-width: 510px;
     }
-*/
-/* ============
-    WIDE: Menu
-   ============ */
-
-
-/*    .title {
-        float: left;
-    }
-
-    nav {
-        float: right;
-        width: 50%;
-    }*/
-
-
-
-/* ============
-    WIDE: Main
-   ============ */
-
-}
-
-@media only screen and (min-width: 1080px) {
 
 /* ========================
     HOME Page
    ======================== */
+    .footer-container {
+        padding: 18px 0;
+    }
+    .footer-container p {
+        text-align: left;
+    }
+    .footer-container br {
+        display: none;   
+    }
 
-    .home-services-box:nth-of-type(1),
-    .home-services-box:nth-of-type(2),
-    .home-services-box:nth-of-type(3),
-    .home-services-box:nth-of-type(4) {
-        width: 24%;
-        margin: 0 0.5%;
+    #home-what {
+        font-size: 0;
+        padding: 30px 0;
+    }
+    #home-what-is,
+    #home-what-why {
+        font-size: initial;
         display: inline-block;
         vertical-align: top;
+        box-sizing: border-box;
+    }
+    #home-what-is {
+        width: 55%;
+        margin: 0;
+    }
+    #home-what-why {
+        width: calc(45% - 15px);
+        margin-left: 15px;
+    }
+    #home-what-why h3 {
+        font-size: 1.5em;
+        line-height: 1;
+    }
+}
+
+@media only screen and (min-width: 1080px) {
+    .main-container {
+        margin-top: 85px;
+    }
+    .header-container {
+        min-height: 85px;
+        box-sizing: border-box;
+    }
+    .header-container .logo {
+        width: 165px;
+    }
+    .header-container .spacer {
+        width: calc(100% - 185px);
     }
 
-    #home-what h1 {
+/* ========================
+    HOME Page
+   ======================== */
+    #home-services {
+        padding-top: 40px;
+    }
+    #home-services .box {
+        width: 25%;
+    }
+
+
+    #home-what #home-what-is span {
         font-size: 2.5em;
     }
+    #home-testimonials {
+        min-height: 225px;
+    }
 
+    #home-what-why {
+        width: calc(45% - 40px);
+        margin-left: 20px;
+        margin-right: 20px;
+        padding-left: 40px;
+        padding-right: 40px;
+    }
 }
 
 @media only screen and (min-width: 1140px) {
@@ -1209,11 +1109,11 @@ legend {
 /* ===============
     Maximal Width
    =============== */
-
+/*
     .wrapper {
-        width: 1026px; /* 1140px - 10% for margins */
+        width: 1026px;
         margin: 0 auto;
-    }
+    }*/
 }
 
 /* ==========================================================================

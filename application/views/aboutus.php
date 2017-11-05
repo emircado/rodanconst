@@ -50,10 +50,10 @@
                 </ul>
             </div>
         </div>
-        <aside id="about-owner">
+        <div id="about-owner">
             <h2>The Owner</h2>
             <p>Danilo Zenarosa has over 25 years of experience as a general contractor. He has completed hundreds of projects, each done with excellent workmanship, throughout the years. He has worked on large projects as well, such as town houses, condominiums, and large installations.</p>
-        </aside>
+        </div>
     </div> <!-- #main -->
 </div> <!-- #main-container -->
 

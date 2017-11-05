@@ -7,7 +7,6 @@
         </div>
     </div>
     <div class="main wrapper clearfix">
-
         <div id="contact-form" class="contact-panel">
             <form name="contact-us-form" method="POST" accept-charset="utf-8" action="<?php echo site_url('contactus') ?>">
                 <fieldset>
@@ -54,7 +53,6 @@
                         <input type="text" name="contact-phone" id="contact-phone"
                             <?php if ($status == 'error') {
                                 echo 'value="'.set_value('contact-phone').'"';
-
                             } ?>><br>
                     </div>
                     <div class="form-field">

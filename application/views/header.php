@@ -15,15 +15,15 @@ defined('BASEPATH') OR exit('No direct script access allowed');
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="apple-touch-icon" href="apple-touch-icon.png">
 
-        <link rel="stylesheet" href="<?php echo base_url('css/normalize.min.css') ?>">
-        <link rel="stylesheet" href="<?php echo base_url('css/main.css') ?>">
-        <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700" rel="stylesheet"> 
+        <link rel="stylesheet" href="<?= base_url('css/normalize.min.css') ?>">
+        <link rel="stylesheet" href="<?= base_url('css/main.css') ?>">
+        <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700" rel="stylesheet">
 
         <link type="text/plain" rel="author" href="http://www.rodanconstruction.com/humans.txt" />
 
-        <link rel="icon" type="image/ico" href="<?php echo base_url('favicon.ico') ?>">
+        <link rel="icon" type="image/ico" href="<?= base_url('favicon.ico') ?>">
 
-        <script src="<?php echo base_url('js/vendor/modernizr-2.8.3-respond-1.4.2.min.js') ?>"></script>
+        <script src="<?= base_url('js/vendor/modernizr-2.8.3-respond-1.4.2.min.js') ?>"></script>
         <script src="https://use.fontawesome.com/2b71088380.js"></script>
     </head>
     <body>
@@ -33,17 +33,31 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 
         <div class="header-container">
             <header class="wrapper clearfix">
-                <div>
-                    <h1 class="title"><a href="<?php echo site_url('') ?>">Rodan Construction</a></h1>
-                    <button id="menu-switch" type="button"><i class="fa fa-bars fa-lg" aria-hidden="true"></i></button>
+                <div class="wrapper">
+                    <div class="logo-box">
+                        <a href="<?= site_url() ?>">
+                            <img class="logo" src="<?= base_url() ?>img/logo.png" alt="Rodan Construction">
+                        </a>
+                        <button id="menu-switch" type="button"><i class="fa fa-bars fa-lg" aria-hidden="true"></i></button>
+                    </div>
                 </div>
-                <nav>
-                    <ul>
-                        <li><a <?php if ($page == "home") {echo 'class="nav-chosen"';} ?> href="<?php echo site_url('') ?>">HOME</a></li>
-                        <li><a <?php if ($page == "aboutus") {echo 'class="nav-chosen"';} ?> href="<?php echo site_url('aboutus') ?>">ABOUT</a></li>
-                        <li><a <?php if ($page == "gallery") {echo 'class="nav-chosen"';} ?> href="<?php echo site_url('gallery') ?>">GALLERY</a></li>
-                        <li><a <?php if ($page == "contactus") {echo 'class="nav-chosen"';} ?> href="<?php echo site_url('contactus') ?>">CONTACT</a></li>
-                    </ul>
-                </nav>
+                <div class="spacer">
+                    <nav id="main-nav">
+                        <ul>
+                            <li <?php if ($page=='home') { ?> class="active" <?php } ?>>
+                                <a href="<?= site_url() ?>">HOME</a>
+                            </li>
+                            <li <?php if ($page=='aboutus') { ?> class="active" <?php } ?>>
+                                <a href="<?= site_url('aboutus') ?>">ABOUT</a>
+                            </li>
+                            <li <?php if ($page=='gallery') { ?> class="active" <?php } ?>>
+                                <a href="<?= site_url('gallery') ?>">GALLERY</a>
+                            </li>
+                            <li <?php if ($page=='contactus') { ?> class="active" <?php } ?>>
+                                <a href="<?= site_url('contactus') ?>">CONTACT</a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
             </header>
         </div>
